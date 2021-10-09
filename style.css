@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: red; */
+    color: white;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+}
+.web-container{
+    width: 100%;
+    height:100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.nav-container{
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.nav-wrapper{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+}
+.nav-wrapper ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 100px;
+}
+.nav-wrapper ul li{
+    margin: 0 1rem;
+    padding: 1rem;
+}
+.nav-wrapper ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-wrapper ul li a#red:hover{
+    color: tomato;
+}
+.nav-wrapper ul li a#yellow:hover{
+    color: rgba(255, 255, 0, 0.719);
+}
+.nav-wrapper ul li a#green:hover{
+    color: rgba(0, 128, 0, 0.801);
+}
+.nav-wrapper ul li a#blue:hover{
+    color: rgba(0, 0, 255, 0.767);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+section h1{
+    font-size: 4rem;
+    text-shadow: -1px 0 rgb(184, 184, 184), 0 1px rgb(184, 184, 184), 1px 0 rgb(184, 184, 184), 0 -1px rgb(184, 184, 184);
+}
+section p{
+    font-size: 1.5rem;
+    text-shadow: -1px 0 rgb(184, 184, 184), 0 1px rgb(184, 184, 184), 1px 0 rgb(184, 184, 184), 0 -1px rgb(184, 184, 184);
+}
+#RED{
+    background: tomato;
+}
+#YELLOW{
+    background: rgba(255, 255, 0, 0.719);
+}
+#GREEN{
+    background: rgba(0, 128, 0, 0.801);
+}
+#BLUE{
+    background: rgba(0, 0, 255, 0.767);
+}
